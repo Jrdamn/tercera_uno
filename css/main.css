@@ -1,9 +1,108 @@
-* {
- 
+*{
     margin: 0; 
     padding: 0; 
-    background-color: rgb(80, 78, 78);
-
-
+} 
+ 
+ 
+ menu{
+ 
+    width: 100%; 
+    height: 100px; 
+    background-color:rgb(212, 47, 176);
+    display: flex;
+    flex-direction: row;
 
 }
+
+.menu-izquierda{
+    width: 150px;
+    height: 100px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.menu-derecha{
+    width: 100%;
+    height: 100px;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-derecha a{
+   width: 100px;
+   height: 25px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   text-decoration: none;
+   justify-content: center;
+   color : white;
+   font-weight: bold;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin: 5px;
+   padding: 10px;
+   box-shadow: 3px 3px 6px 0 white;
+    border-radius: 10px;
+}
+
+.menu-normal{
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .menu-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+
+  .menu-normal{
+    display: none;
+  }
+
+  .hamburger-icon {
+    width: 40px;
+    height: 30px;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+ 
+  .hamburger-icon span {
+    background-color: white;
+    width: 100%;
+    height: 6px;
+    display : block;
+    border-radius: 3px;
+  }
+
+  .menu-container.menu-open .menu-normal {
+    padding: 0;
+    display: flex;
+    z-index: 2;
+    background-color: rgb(212, 47, 176);
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    margin: 250px 20px -45px 0px;
+    padding : 20px;
+    border-radius: 20px;
+    border: solid 2px white
+  }
+ 
+}
+

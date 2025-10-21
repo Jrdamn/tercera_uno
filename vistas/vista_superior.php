@@ -14,7 +14,7 @@
 <menu>
     <div class="menu-izquierda">
         <a href="./">
-        <img src="./img/logo.png" alt="" height="100">
+        <img src="./img/logo.png" alt="" height="100" width="170">
         </a>
     </div>
 

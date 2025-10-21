@@ -1,4 +1,6 @@
 <?php require_once "./vistas/vista_superior.php"?>
-
- Esta es la pagina principal
+<body>
+   <div class="card-list"></div>
+</body>
+ 
 <?php require_once "./vistas/vista_inferior.php"?>
